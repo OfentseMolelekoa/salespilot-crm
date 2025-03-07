@@ -1,0 +1,707 @@
+/*===========================HTML - General Reset - Block=============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    background-color: #E5E7EB;
+    position: relative;
+    display: flex;
+}
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*===========================HTML - General Reset - Block=============================*/
+
+/*===================================Universal Styles=================================*/
+#back-link {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+#back-link:hover {
+    color: #ffb300;
+    cursor: pointer;
+}
+.form-container {
+    border-radius: 8px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.126);
+    padding: 10px
+}
+.section-title {
+    padding: 10px 30px 10px 30px;
+}
+/*===================================Universal Styles=================================*/
+
+
+
+/*===========================Login Page - Login Form- Block============================*/
+
+#login-page-logo {
+    width: 70px;
+}
+#login-create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4f7fa;
+    padding: 20px; /* Prevents content from touching screen edges */
+    box-sizing: border-box;
+}
+#no-account {
+    font-weight: 700;
+}
+
+/* Ensure the form is centered inside */
+#login-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Adjust margin for better spacing */
+#login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#login-status, #register-status {
+    color: rgb(162, 162, 162);
+}
+
+/* Fix input spacing issue */
+#login-form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ensure buttons are centered */
+#login-btn, #register-btn {
+    width: 100%;
+    padding: 12px;
+    background: #06273a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.2s ease;
+}
+#login-btn:hover {
+    background: #0e4361;
+    transform: scale(1.03);
+}
+#register-btn:hover {
+    background: #0e4361;
+    transform: scale(1.03);
+}
+
+/* Adjust SSO login spacing */
+#sso-login {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Make sure SSO icons are properly centered */
+#sso-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#sso-options img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#sso-options img:hover {
+    transform: scale(1.3);
+    background-color: rgba(212, 212, 212, 0.188);
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    #login-create-account {
+        padding: 40px 10px;
+    }
+
+    #login-form {
+        width: 90%;
+    }
+}
+
+
+/*===========================Login Page - Login Form- Block============================*/
+
+
+
+
+/*===========================Index - Menu Bar - Block=================================*/
+#menu {
+    background-color: #06273a;
+    width: 300px;
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Ensures it stays fixed on the left */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enables scrolling if the content overflows */
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+#menu .logo img {
+    width: 40px;
+    margin-right: 15px
+}
+#menu .items {
+    margin-top: 40px;
+}
+#menu .items li {
+    list-style-type: none;
+    padding: 15px 0;
+}
+#menu .items li:hover {
+    background-color: #ffffff08; /* Greyish background */
+    transition: 0.3s ease;
+}
+
+#menu .items li i {
+    color: rgb(218, 231, 237);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px 0 25px;
+    transition: 0.7s ease;
+}
+#menu .items li a {
+    text-decoration: none;
+    color: rgb(218, 231, 237);
+    font-weight: 300px;
+    transition: 0.7s ease;
+}
+#menu .items li i:hover {
+    cursor: pointer;
+}
+#menu .items li:nth-child(1) {
+    border-left: 4px solid #fff;
+}
+#menu .items li:hover i {
+    color: #ffb300;
+}
+#menu .items li:hover a {
+    color: #ffb300;
+}
+/*===========================Index - Menu Bar - Block=================================*/
+
+/*===========================Index - Interface - Block=================================*/
+#interface {
+    width: calc(100% - 300px); /* Adjust width to account for the sidebar */
+    margin-left: 300px; /* Move it to the right so it doesn't go behind the sidebar */
+    position: relative; /* Ensure it stays above the menu */
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center all items */
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 3px solid #06273a;
+    position: relative;
+}
+
+#interface .navigation .search {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px; /* Increase padding for a bigger search bar */
+    border: 1px solid #b8b8a5;
+    border-radius: 8px; /* Slightly rounded corners */
+    width: 60%; /* Make it wider */
+    max-width: 500px; /* Prevent excessive width */
+    background-color: white;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%; 
+}
+#interface .navigation .search input::placeholder {
+    color: #b2b8c3;
+    font-size: 12px; 
+}
+#interface .navigation .search i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+#interface .navigation .profile {
+    position: absolute;
+    right: 30px; /* Keep profile section aligned right */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Vertically center the items */
+}
+
+#interface .navigation .profile p {
+    margin-right: 10px; /* Add some space between the username and the image */
+}
+
+#interface .navigation .profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*===========================Index - Interface - Block=================================*/
+
+/*===========================Index - Dashboard - Block=================================*/
+.i-name {
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.values {
+    display: flex; /* Arrange boxes in a row */
+    justify-content: space-between; /* Distribute them with space between */
+    padding: 30px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    gap: 20px; /* Adds spacing between items */
+}
+.values .val-box {
+    background-color: #fff;
+    width: 250px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s ease;
+}
+.values .val-box:hover {
+    background-color: #eaf4f6ac;
+    cursor: pointer;
+}
+
+.values .val-box i {
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.values .val-box:nth-child(1) i {
+    background-color: #ff5733; /* Red-Orange */
+}
+.values .val-box:nth-child(2) i {
+    background-color: #33b5e5; /* Blue */
+}
+.values .val-box:nth-child(3) i {
+    background-color: #2ecc71; /* Green */
+}
+.values .val-box:nth-child(4) i {
+    background-color: #f1c40f; /* Yellow */
+}
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.values .val-box span {
+    font-size: 15px;
+    color: #5f646d;
+}
+/*===========================Index - Dashboard - Block=================================*/
+
+
+
+/*=======================Manage Users - Users Section - Block==========================*/
+
+.users-section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.users-section p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.existing-user-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.user-item:hover {
+    background-color: #f1f1f1;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+}
+.user-role {
+    font-size: 14px;
+    color: #777;
+}
+.user-item:hover {
+    cursor: pointer;
+}
+#create-user-btn:hover {
+    cursor: pointer;
+}
+#create-user-btn i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.section-title {
+    padding: 10px 30px 10px 30px;
+}
+.remove-user {
+    color: red;
+    font-size: 16px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-user:hover {
+    color: darkred;
+}
+
+.responsibility-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.responsibility-group div {
+    display: flex;
+    align-items: center;
+}
+
+.responsibility-group label {
+    margin-left: 8px;
+}
+#responsibility-heading {
+    font-weight: 700;
+}
+
+#create-user-btn {
+    border: 1px solid #ddd;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: auto;  
+    margin-right: auto;  
+    transition: 0.3s ease;
+}
+#create-user-btn:hover {
+    background-color: #ddd;
+}
+
+.user-info-group {
+    display: flex;
+    flex-direction: column;
+}
+.user-info-group input {
+    padding-left: 3px;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+.user-info-group input:focus {
+    border-color: #33b5e5;
+    outline: none; 
+    box-shadow: 0 0 5px rgba(51, 181, 229, 0.7);
+}
+
+.user-info-group input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+#user-creation-status {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+.responsibility-group input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: green; /* For modern browsers to change checkbox color */
+    margin-right: 10px;
+    /* You can add more custom styles here if needed */
+}
+
+/*=======================Manage Users - Users Section - Block==========================*/
+
+
+/*=======================Active Clients - Clients Section - Block==========================*/
+.client-section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.client-section p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.existing-client-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.client-item:hover {
+    background-color: #f1f1f1;
+}
+
+.client-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.client-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+}
+.client-point-of-contact {
+    font-size: 14px;
+    color: #777;
+}
+.client-item:hover {
+    cursor: pointer;
+}
+#create-user-btn:hover {
+    cursor: pointer;
+}
+#create-user-btn i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.remove-client {
+    color: red;
+    font-size: 16px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-client:hover {
+    color: darkred;
+}
+
+.client-new-or-returning-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.client-new-or-returning-container div {
+    display: flex;
+    align-items: center;
+}
+
+.client-new-or-returning-container label {
+    margin-left: 8px;
+}
+#new-or-returning {
+    font-weight: 700;
+}
+
+#create-client-btn {
+    border: 1px solid #ddd;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: auto;  
+    margin-right: auto;  
+    transition: 0.3s ease;
+}
+#create-client-btn:hover {
+    background-color: #ddd;
+}
+
+.clients-info-group {
+    display: flex;
+    flex-direction: column;
+}
+.clients-info-group input {
+    padding-left: 3px;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+.clients-info-group input:focus {
+    border-color: #33b5e5;
+    outline: none; 
+    box-shadow: 0 0 5px rgba(51, 181, 229, 0.7);
+}
+
+.clients-info-group input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+#client-creation-status {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+.responsibility-group input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: green; /* For modern browsers to change checkbox color */
+    margin-right: 10px;
+    /* You can add more custom styles here if needed */
+}
+/*=======================Active Clients - Clients Section - Block==========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css-stylesheet-main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lato:wght@400;700&family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&family=Yellowtail&display=swap" rel="stylesheet">
+    <script type="module" src="js-files/firebase-auth-and-acc-creation.js"></script>
+    <title>SalesPilot CRM</title>
+</head>
+<body>
+    <section id="login-create-account">
+        
+        <div id="login-form">
+            <div class="logo">
+                <img src="images/Untitled_design-removebg-preview.png" alt="image not available" id="login-page-logo"/>
+                <h2>SalesPilot</h2>
+            </div>
+            <form>
+                <label for="username">Username</label>
+                <input type="email" id="username" name="username"/>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"/>
+                <label for="organization-id">Organization ID</label>
+                <input type="text" id="organization-id" name="organization-id"/>
+            </form>
+            <br>
+            <p id="login-status">Enter details to log in</p>
+            <button id="login-btn">Log in</button>
+
+            <div id="sso-login">
+                <p>Login via SSO/Single-Sign on. Ensure with your organization administrator that SSO option used is registered in your organization.</p>
+                <br>
+                <p>Login using your personal Microsoft Account, Entra ID or Google Account</p>
+                <span id="sso-options">
+                    <img src="sso-logos/icons8-azure-48.png" alt="image not available"/>
+                    <img src="sso-logos/icons8-microsoft-48.png" alt="image not available"/>
+                    <img src="sso-logos/icons8-google-logo-48.png" alt="image not available"/>
+                </span>
+            </div>
+
+            <br>
+
+            <form id="register-form">
+                <p id="no-account">No Account? Create an account below</p>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"/>
+                <label for="password">Password</label>
+                <input type="password" id="password-register" name="password"/>
+                <label for="organization-id-register">Organization ID</label>
+                <input type="text" id="organization-id-register" name="organization-id-register"/>
+            </form>
+            <br>
+            <p>Ensure that your organization currently has active a SalesPilot subscription</p>
+            <br>
+            <p id="register-status">Enter details to register</p>
+            <button id="register-btn">Register</button>
+        </div>
+    </section>
+
+</body>
+</html>
